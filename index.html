@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AMC-CNC</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- Contact form php file -->
+
+<!-- stylesheet css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+<!-- google web font css -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+
+<style>
+
+
+ul.tab {
+    list-style-type: none;
+    margin-top: 40px;    
+    margin-left: 0px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: #C6152F;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 22px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+      color: #000000;
+      background-color: transparent;
+}
+
+
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: transparent;
+    color: #000000;	
+}
+
+/* Style the tab content */
+.tabcontent {	
+    display: none;
+    padding: 0px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+
+	
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" id="top">
+<!-- navigation -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span></button>
+      <a href="#"><img src="images/AMC-Logo.png" height="140" width="270" alt="logo" style="margin-top:0px"></a></div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="smoothScroll">HOME</a></li>
+        <li><a href="#service" class="smoothScroll">SERVICE</a></li>
+        <li><a href="#about" class="smoothScroll">ABOUT</a></li>
+        <!-- <li><a href="#team" class="smoothScroll">TEAM</a></li> --> 
+        <li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
+        <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+        <div style="float:left;">
+            <a href="ba\index.html">
+            <img src="images\bosna-zastava.png" alt="bosanski" title="Bosnian" style="width:40px; height:20px; margin-top:35px; margin-left:10px;"/></a>
+            <a href="de\index.html">
+            <img src="images\njemacki-zastava.png" alt="njemacki" title="German" style="width:40px; height:20px; margin-top:35px; margin-left:10px;"/></a>
+		</div>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- home section -->
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6">
+        <h2>welcome to</h2>
+        <h1> <strong>AMC </strong>Maschinenbau</h1>
+        <p align="justify">Since the founding in 1991, the requirements and wishes of our customers have been the focus of our activities. 
+		We are your reliable partner for manufacturing and developing complex products from all areas of mechanical engineering. 
+		With modern machines of various sizes and complexity, we can meet your requirements quickly and cost-effectively.</p>
+        <a href="#service" class="btn btn-default smoothScroll">TEST US</a></div>
+    </div>
+  </div>
+</div>
+<!-- service section -->
+<div id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2>Here is what we offer</h2>
+      </div>
+	  
+	  <div class="col-md-offset-1 col-md-4 col-sm-4"><img src="images/komplet-enn.png" class="img-responsive" alt="about img" style="height:280px"></div>
+      <div class="col-md-6 col-sm-6" style="margin-top: 55px;">
+        <h4>For companies we produce large and small series</h4>
+        <p align="justify">
+			Apart from precise design, we also offer competent advice and individual service to our customers. 
+			For large series, we first create a prototype. If this is in accordance with your ideas, the order will go into production. 
+			We are also happy to arrange framework agreements with our customers and usually sign them for 12 to 24 months.
+		</p>
+      </div>
+      
+<div class="col-md-12 col-sm-12">
+<ul class="tab">
+  <div class="col-md-offset-1 col-md-2 col-sm-4"> <i class="fa fa-gears"></i>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openOperation(event, 'Turning')"><p>Turning</p></a></li></div>
+
+<div class="col-md-2 col-sm-4"> <i class="fa fa-gears"></i>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openOperation(event, 'Milling')"><p>Milling</p></a></li></div>
+  
+  <div class="col-md-2 col-sm-4"> <i class="fa fa-gears"></i>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openOperation(event, 'Measure')"><p>Measure</p></a></li></div>
+
+  <div class="col-md-2 col-sm-4"> <i class="fa fa-gears"></i>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openOperation(event, 'Assembly')"><p>Assembly</p></a></li></div>
+
+  <div class="col-md-2 col-sm-4"> <i class="fa fa-gears"></i>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openOperation(event, 'Welding')"><p>Welding</p></a></li></div>
+</ul>
+
+</div>
+
+
+<div id="Turning" class="tabcontent">
+ <div class="col-md-12 col-sm-12">
+  <p style="text-align: left; margin-left: 40px;">On our CNC rotation machines, we process prototypes and serial parts. Rotating parts up to Ø 300 mm belong to our machining range. All machines are equipped with short-loading magazines.</p>
+</div>
+</div>
+
+<div id="Milling" class="tabcontent">
+<div class="col-md-12 col-sm-12">  
+<p style="text-align: left; margin-left: 40px;">Our state-of-the-art machines leave nothing to be desired. We manufacture for you from item to large series keeping the same high quality. We also produce new products at night. (Indunorm facility).</p> 
+</div>
+</div>
+
+<div id="Measure" class="tabcontent">
+<div class="col-md-12 col-sm-12">
+  <p style="text-align: left; margin-left: 40px;">Thanks to state-of-the-art measuring instruments, we guarantee the highest quality on request even with test protocol. </p>
+</div>
+</div>
+
+<div id="Assembly" class="tabcontent">
+<div class="col-md-12 col-sm-12">
+  <p style="text-align: left; margin-left: 40px;">We would be happy to assemble your modules in our company and thus guarantee you the shortest delivery times from our warehouse. Just ask us!</p> 
+</div>
+</div>
+
+<div id="Welding" class="tabcontent">
+<div class="col-md-12 col-sm-12">
+  <p style="text-align: left; margin-left: 40px;">Steel, stainless steel and aluminum are our standard materials, from the simple stitching to the elaborate welding design. This way you always get a solid and cleanly processed product of tested quality.</p>
+</div>
+</div>
+
+
+<script>
+function openOperation(evt, OperationName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(OperationName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+    </div>
+  </div>
+</div>
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+
+<!-- about section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2>Our Story</h2>
+      </div>
+      <div class="col-md-offset-1 col-md-4 col-sm-4"><img src="images/ABOUT US.jpg" class="img-responsive" alt="about img" style="height:300px"></div>
+      <div class="col-md-6 col-sm-6" style="margin-bottom: 50px;">
+        <h3>ABOUT US</h3>
+        <h4>Success with precision.</h4>
+        <p align="justify">
+			We are a cost-effective and according to international quality standards supplier in the field of mechanical production on modern CNC machines. 
+			We develop, construct and manufacture according to your specifications and deliver to the desired address Europe wide. 
+			Our advantages are that as a customer you only need one contact person for your project, the rest is done by our employees. 
+			Whether in German, English or Bosnian, you can contact us under, in Contact form.
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+
+<!-- portfolio section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="title">
+          <h2>Our products</h2>
+        </div>
+        <!-- ISO section -->
+       <div class="iso-section">
+          <ul class="filter-wrapper clearfix">
+          </ul>
+          <div class="iso-box-section">
+            <div class="iso-box-wrapper col4-iso-box">
+              <div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/1.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/2.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/3.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/4.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/5.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box twist cutting col-md-4 col-sm-4 col-xs-12"><a href="images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/6.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box cutting col-md-4 col-sm-4 col-xs-12"><a href="images/7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/7.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/8.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+			  <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/9.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/9.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/10.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/10.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+			  <div class="iso-box twist cutting measuring 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/11.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/11.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box 3Dprinting col-md-4 col-sm-4 col-xs-12"><a href="images/12.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/12.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-4 col-sm-4 col-xs-12"><a href="images/14.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/14.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+			  <div class="iso-box twist montage col-md-6 col-sm-6 col-xs-12"><a href="images/15.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/15.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+              <div class="iso-box measuring col-md-6 col-sm-6 col-xs-12"><a href="images/16.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/16.jpg" style="border:outset; color: #cad1db" alt="portfolio img"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+<!-- contact section -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2>Contact us</h2>
+      </div>
+      <form method="post" action="slanje.php" >
+        <div class="col-md-1 col-sm-1"></div>
+        <div class="col-md-10 col-sm-10">
+          <div class="col-md-6 col-sm-6">
+            <input type="text" placeholder="Name" name="name" id="name"class="form-control">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <input type="email" placeholder="Email" name="email" id="email" class="form-control">
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <textarea placeholder="Message" name="message" id="message" class="form-control" rows="5"></textarea>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <input type="text" placeholder="Subject" name="subject" id="subject" class="form-control">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <p>We are going to answer you as soon as possible.</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <input type="submit" value="SEND MESSAGE" class="form-control"> <a href="http://amc-cnc.com/slanje.php">Email Form</a>
+          </div>
+        </div>
+        <div class="col-md-1 col-sm-1"></div>
+      </form>
+      
+      <!-- map-->
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="google-maps" style="vertical-align: middle;">
+		<iframe width="100%" height="600" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;coord=44.43798524949607,18.877730372067845&amp;q=Kalesija+(AMC-CNC)&amp;ie=UTF8&amp;t=&amp;z=7&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pl/stworz-mape-google/">Osadź html Google Maps</a> na <a href="http://www.mapsdirections.info/pl/">Narzędzie Planowania Trasy</a></iframe>
+            </div>
+        </div>      
+    </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+<!-- footer section -->
+<footer>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-10 col-sm-10">
+			<h2>Address</h2>
+		</div>
+		<div class="col-md-1 col-sm-1"></div>
+	</div>
+    <div class="row">
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-md-3 col-sm-3">
+			<p><b>AMC</b></p>
+			<p><b>Halisijska</b></p>
+			<p><b>75260 Kalesija, BiH</b></p>
+			<a href="mailto:info@amc-cnc" target="_top" style="color: #C6152F;"><p><b>info@amc-cnc.com</b></p></a>
+			<!--<p>Email: <span>info@amc-cnc.com</span></p>
+			<p>Phone: <span>+38761000000</span></p>
+			-->
+		</div>
+		<div class="col-md-3 col-sm-3" style="margin-left:390px; text-align: right;">
+			<p>German: +41788421118</p>
+			<p>English: +38761429000</p>
+			<p>Bosnian: +38761429000</p>
+		</div>
+		<div class="col-md-5 col-sm-5"></div>
+	  <!--
+      <div class="col-md-6 col-sm-6">
+        <h2>Social Network</h2>
+        <ul class="social-icons">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-dribbble"></a></li>
+        </ul>
+      </div>
+	  -->
+    </div>
+  </div>
+</footer>
+<!-- divider section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10">
+      <hr>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+</div>
+<!-- copyright section -->
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <p>&copy; AMC-CNC 2016. All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scrolltop section -->
+<a href="#top" class="go-top"><i class="fa fa-angle-up"></i></a>
+<!-- javascript js -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
